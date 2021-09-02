@@ -1,6 +1,10 @@
-# Trading Algorithm RSI - Candlestick
+# Trading Algorithm RSI, Candlestick and Simple Moving Averages.
 
+This algorithm was created with the purpose of seeing how japanese candlesticks, RSI indicator and Simple Moving Averages behave together in a trading strategy.
 
+This code was developed on a backtesting algorithm base from the past data of the four major currency pairs (EURUSD, GBPUSD, USDJPY, USDCHF).
+
+We forcasted entries and exits based on the indicators mentioned above and with this we could see if there would be any gain or loss using them as signals for our trading operations.
 
 ## Technologies
 
@@ -64,33 +68,44 @@ Third, clone the repository and open the code onto your jupyter lab:
 In order to calculate the correlation, indicators, backtest and plot the data. We had to prepare the data in different ways for each step: 
 
 Dropping columns for taking away extra unneccesary columns
+
 ![dropping columns](https://user-images.githubusercontent.com/80844686/131904415-ce65c6ea-cd8c-48af-86ee-c85fa3bc3464.png)
 
 Slicing the data for calculating the correlation
+
 ![slicing the data](https://user-images.githubusercontent.com/80844686/131903174-748252e6-f784-441f-85a2-91a96d5ecd8b.png)
 
 Reseting the index for plotting the candlestick bar charts
+
 ![reset the index](https://user-images.githubusercontent.com/80844686/131904614-96cb7794-0bc0-4c7b-8724-5f371e06b3ac.png)
 
 
 #### Calculations
-![rsi Equation](https://latex.codecogs.com/gif.latex?RSI%20%3D%20100-%5Cfrac%7B100%7D%7B1&plus;RS%7D)
+
+[Relativae Strength Index](https://www.investopedia.com/terms/r/rsi.asp) (RSI) it's a momentum indicator used in technical analysis that measures the magnitude of recent price changes to evaluate overbought or oversold conditions in the price of a stock or other asset.
+
+![rsi Equation](https://latex.codecogs.com/gif.latex?RSI%20%3D%20100%20-%20%5Cfrac%7B100%7D%7B1&plus;%5Cfrac%7BAverage%20Gain%7D%7BAverage%20loss%7D%7D)
+
+[Simple Moving Average (SMA)](https://www.investopedia.com/terms/m/movingaverage.asp)  it's a calculation used to analyze data points by creating a series of averages of different subsets of the full data set.
 
 ![SMA equation](https://latex.codecogs.com/gif.latex?SMA%20%3D%20%5Cfrac%7BA_%7B1%7D%20&plus;%20A_%7B2%7D%20&plus;%20...&plus;A_%7Bn%7D%7D%7Bn%7D)
 
 ### Results
 
 ##### Daily return plot
+
 ![bokeh_plot (3)](https://user-images.githubusercontent.com/80844686/131893643-06862277-7450-430a-9c81-9a2c282fd37a.png)
 
 
 ![daily return plot](https://user-images.githubusercontent.com/80844686/131893708-dc94bfde-70b3-48e3-8f31-82c24f1787a8.png)
 
 ##### Correlation between the for major pair of currencies
+
 ![correlation](https://user-images.githubusercontent.com/80844686/131893853-c3e93269-05d2-4993-badb-14020cd65016.png)
 
 
 ##### Signal chart
+
 ![bokeh_plot (4)](https://user-images.githubusercontent.com/80844686/131894263-9f0f8a5b-4b37-4c28-9682-8883bebb643e.png)
 
 ![bokeh_plot (5)](https://user-images.githubusercontent.com/80844686/131894298-9764b80e-8100-4341-9f63-1457c1f4f6cb.png)
@@ -100,16 +115,11 @@ Reseting the index for plotting the candlestick bar charts
 ![bokeh_plot (7)](https://user-images.githubusercontent.com/80844686/131894314-67a52185-2d83-4ff7-9a0b-1f965de8bb08.png)
 
 ##### Backtest result of the RSI-Candlestick strategy
-![Backtest EURUSD](https://user-images.githubusercontent.com/80844686/131893466-2c6666ad-63bb-497a-a0d9-993b80a37ca9.png)
+
+![Backtest EURUSD](https://user-images.githubusercontent.com/80844686/131893466-2c6666ad-63bb-497a-a0d9-993b80a37ca9.png) ![Backtest GBPUSD](https://user-images.githubusercontent.com/80844686/131893238-2eeb9429-ad43-4b7c-8480-0ef7fc82e3dc.png)
 
 
-![Backtest GBPUSD](https://user-images.githubusercontent.com/80844686/131893238-2eeb9429-ad43-4b7c-8480-0ef7fc82e3dc.png)
-
-
-![Backtest USDJPY](https://user-images.githubusercontent.com/80844686/131893145-f70c12e3-27ae-45cb-8d01-16276f1dd6c4.png)
-
-
-![Backtest USDCHF](https://user-images.githubusercontent.com/80844686/131893030-783d6f07-a4fd-4b0d-aeb6-a4daa3e5a477.png)
+![Backtest USDJPY](https://user-images.githubusercontent.com/80844686/131893145-f70c12e3-27ae-45cb-8d01-16276f1dd6c4.png) ![Backtest USDCHF](https://user-images.githubusercontent.com/80844686/131893030-783d6f07-a4fd-4b0d-aeb6-a4daa3e5a477.png)
 
 
 ## Contributors
