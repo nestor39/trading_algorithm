@@ -141,6 +141,9 @@ Sortino Ratio: A variation of the Sharpe ratio that differentiates an asset’s 
 
 ![bokeh_plot (7)](https://user-images.githubusercontent.com/80844686/131894314-67a52185-2d83-4ff7-9a0b-1f965de8bb08.png)
 
+![bokeh_plot (8)](https://user-images.githubusercontent.com/80844686/131949764-e809fbd8-8b4d-4bc8-adb5-2e7176961eec.png)
+
+
 ##### Backtest result of the RSI-Candlestick strategy
 
 ![Backtest EURUSD](https://user-images.githubusercontent.com/80844686/131893466-2c6666ad-63bb-497a-a0d9-993b80a37ca9.png) ![Backtest GBPUSD](https://user-images.githubusercontent.com/80844686/131893238-2eeb9429-ad43-4b7c-8480-0ef7fc82e3dc.png)
@@ -148,6 +151,7 @@ Sortino Ratio: A variation of the Sharpe ratio that differentiates an asset’s 
 
 ![Backtest USDJPY](https://user-images.githubusercontent.com/80844686/131893145-f70c12e3-27ae-45cb-8d01-16276f1dd6c4.png) ![Backtest USDCHF](https://user-images.githubusercontent.com/80844686/131893030-783d6f07-a4fd-4b0d-aeb6-a4daa3e5a477.png)
 
+![backtest google](https://user-images.githubusercontent.com/80844686/131949715-ca1f76c5-0a75-4c98-bff2-d8d04a71b817.png)
 
 ## Contributors
 
