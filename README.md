@@ -79,6 +79,30 @@ Reseting the index for plotting the candlestick bar charts
 
 ![reset the index](https://user-images.githubusercontent.com/80844686/131904614-96cb7794-0bc0-4c7b-8724-5f371e06b3ac.png)
 
+Annualized Return: A metric that represents the expected Return On Investment (ROI) over a time period of one year. We calculate it by first averaging the daily return values over the time period of the dataset. We then multiply that average daily return value by 252, or the number of trading days in a year.
+
+![image](https://user-images.githubusercontent.com/80844686/131931762-e8d69e2c-4110-4088-9914-f02d8cf3fc0b.png)
+
+
+Cumulative Returns: The aggregate percentage return (that is, the percentage gain or percentage loss) for an investment. We measure the cumulative return across the entire investment rather than for a particular time period. 
+
+![Cumulative retunr](https://latex.codecogs.com/gif.latex?Cumulative%20return%20%3D%20%5Cfrac%7B%28Currrent%20Price%29-%28Original%20price%29%7D%7BOriginal%20price%7D)
+
+Annual Volatility: The amount that each daily return value differs from the asset's average daily return value (that is, the standard deviation of the asset’s daily return values), measured over one year. The annual volatility helps determine the amount that the stock will potentially gain or lose vs. the expected amount.
+
+[![image](https://user-images.githubusercontent.com/80844686/131931019-f25cd0e0-3c28-4ecf-a7aa-f377fb05a025.png)(https://www.learntocalculate.com/calculate-daily-volatility/)
+
+
+Sharpe Ratio: A measurement of an asset's outperformance as compared to the asset’s volatility. The outperformance is measured by the difference between the asset's ROI and the return expected from an asset assumed to have no risk, like a three-month US Treasury bill. The asset's volatility is characterized by the standard deviation of its daily return values.
+
+![image](https://user-images.githubusercontent.com/80844686/131930985-e4764266-49b1-47f3-bcc0-73bbdb30eb4d.png)
+
+
+Sortino Ratio: A variation of the Sharpe ratio that differentiates an asset’s harmful volatility from its overall volatility. The Sharpe ratio measures an investment’s ROI vs. its volatility, treating positive or negative results the same way. By contrast, the [Sortino ratio](https://www.investopedia.com/terms/s/sortinoratio.asp)  focuses on the downside standard deviation, which measures the downside volatility of the asset. The distinction has relevance, because investors tend to have more concern about negative surprises than positive ones.
+
+![image](https://user-images.githubusercontent.com/80844686/131930898-17779b87-65cc-489d-94bb-1719dbd5461d.png)
+
+
 
 #### Calculations
 
@@ -89,6 +113,9 @@ Reseting the index for plotting the candlestick bar charts
 [Simple Moving Average (SMA)](https://www.investopedia.com/terms/m/movingaverage.asp)  it's a calculation used to analyze data points by creating a series of averages of different subsets of the full data set.
 
 ![SMA equation](https://latex.codecogs.com/gif.latex?SMA%20%3D%20%5Cfrac%7BA_%7B1%7D%20&plus;%20A_%7B2%7D%20&plus;%20...&plus;A_%7Bn%7D%7D%7Bn%7D)
+
+
+
 
 ### Results
 
